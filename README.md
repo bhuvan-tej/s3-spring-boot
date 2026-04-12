@@ -22,7 +22,7 @@ Instead of deleting files permanently, this system **archives them with timestam
 
 ---
 
-## 📁 S3 Bucket Structure
+## 🪣 S3 Bucket Structure
 
 ```
 s3-bucket-name/                    ← s3 bucket name
@@ -66,6 +66,14 @@ src/
 
 ---
 
+## ☁️ S3 CRUD Operations Overview
+
+<p align="center">
+    <img src="docs/s3_crud.png" width="800">
+</p>
+
+---
+
 ## 🛠️ Tech Stack
 
 | Layer                 | Technology                    |
@@ -76,7 +84,7 @@ src/
 | Build                 | Maven                         |
 | Boilerplate reduction | Lombok                        |
 | Tests                 | JUnit 5 + Mockito             |
- 
+
 ---
 
 ## 🚀 Quick Start
@@ -154,5 +162,3 @@ mvn spring-boot:run
 ```
 
 The server starts at **http://localhost:8080**
- 
----
