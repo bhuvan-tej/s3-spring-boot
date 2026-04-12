@@ -1,0 +1,39 @@
+# =============================================================
+# Application Configuration — Spring Boot S3
+# =============================================================
+# IMPORTANT: Never commit real credentials to git.
+# Use environment variables or AWS credential profiles instead.
+# See README.md for how to set env vars locally.
+# =============================================================
+
+spring:
+  application:
+    name: s3-spring-boot
+
+  # Multipart upload limits — increase if you need larger files
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB       # Max single file size
+      max-request-size: 100MB   # Max total request size
+
+server:
+  port: 8080
+
+# =============================================================
+# AWS Configuration
+# =============================================================
+aws:
+  region: ${AWS_REGION:ap-south-1}                              # Default to Mumbai; override via env var
+  credentials:
+    access-key: ${AWS_ACCESS_KEY_ID}                            # Set via environment variable
+    secret-key: ${AWS_SECRET_ACCESS_KEY}                        # Set via environment variable
+  s3:
+    bucket-name: ${AWS_S3_BUCKET}
+
+    # Base folder where all category subfolders live (e.g., Pictures/Beaches/)
+    base-folder: Pictures/
+
+    # Archive folder — soft-deleted files are moved here with a timestamp
+    # Full path becomes:  Archive/<original-folder>_<filename>_<timestamp>
+    archive-folder: Archive/

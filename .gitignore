@@ -1,0 +1,40 @@
+# ===============================
+# Java / Spring Boot
+# ===============================
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot DevTools
+spring-pid
+
+# ===============================
+# IDE Files
+# ===============================
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+
+# ===============================
+# OS Files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# AWS CREDENTIALS — NEVER COMMIT!
+# ===============================
+# Real credentials should ONLY live in environment variables or ~/.aws/credentials
+application-local.yml
+application-prod.yml
+*.env
+.env*
