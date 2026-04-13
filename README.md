@@ -162,3 +162,7 @@ mvn spring-boot:run
 ```
 
 The server starts at **http://localhost:8080**
+
+---
+
+*If this helped you, drop a ⭐ — it keeps the motivation going.*
