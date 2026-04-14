@@ -110,7 +110,6 @@ Attach this policy to your IAM user to grant only the permissions this app needs
         "s3:PutObject",
         "s3:GetObject",
         "s3:DeleteObject",
-        "s3:CopyObject",
         "s3:ListBucket"
       ],
       "Resource": [
