@@ -133,7 +133,7 @@ DELETE /api/v1/s3/{folder}/files/{fileName}
 > ⚠️ Irreversible — prefer Archive for recoverable deletes.
  
 ```bash
-curl -X DELETE http://localhost:8080/api/v1/s3/Beaches/files/IMG_1.HEIC
+curl -X DELETE http://localhost:8080/api/v1/s3/Beaches/files/IMG_1.jpg
 ```
 
 **Response `200 OK`**
@@ -141,7 +141,7 @@ curl -X DELETE http://localhost:8080/api/v1/s3/Beaches/files/IMG_1.HEIC
 {
   "success": true,
   "message": "File permanently deleted.",
-  "key": "Pictures/Beaches/IMG_1.HEIC"
+  "key": "Pictures/Beaches/IMG_1.jpg"
 }
 ```
 
